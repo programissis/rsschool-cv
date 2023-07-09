@@ -76,6 +76,10 @@ body {
 	padding: var(--body-padding);
 	/* border: 1px solid var(--border-color); */
 	border-radius: var(--body-border-radius);
+	/* background-image: url(https://material-foundation.github.io/material-theme-builder/assets/mdl/plant3.svg);
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	background-size: 220px; */
 }
 
 header {
@@ -120,7 +124,7 @@ section {
 	gap: 10px;
 }
 
-.navigation-list>li>a {
+.badge {
 	display: inline-block;
 	padding: 6px 24px;
 	border: 1px solid var(--border-color);
@@ -128,7 +132,7 @@ section {
 	width: max-content;
 }
 
-.navigation-list>li>a:hover {
+.badge:hover {
 	background-color: rgb(var(--section-bg-color) / 0.05);
 }
 
@@ -145,10 +149,42 @@ main {
 	flex-wrap: wrap;
 }
 
-.section-wrapper>* {
-	flex: 1;
+section#contacts {
+	flex: auto;
 }
 
-section#education {
-	flex: 2.5;
+section#projects {
+	flex: auto;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 40px;
+}
+
+footer>.course-logo {
+	width: 100%
+}
+
+.bg-plant-1,
+.bg-plant-2,
+.bg-plant-3 {
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	background-size: 100px;
+}
+
+.bg-plant-1 {
+	background-image: url(https://material-foundation.github.io/material-theme-builder/assets/mdl/plant1.svg);
+
+}
+
+.bg-plant-2 {
+	background-image: url(https://material-foundation.github.io/material-theme-builder/assets/mdl/plant2.svg);
+}
+
+.bg-plant-3 {
+	background-image: url(https://material-foundation.github.io/material-theme-builder/assets/mdl/plant3.svg);
 }

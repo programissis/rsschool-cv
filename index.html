@@ -23,17 +23,17 @@
 	</header>
 	<nav>
 		<ul class="navigation-list">
-			<li><a href="#about-me">About Me</a></li>
-			<li><a href="#contacts">Contacts</a></li>
-			<li><a href="#skills">Skills</a></li>
-			<li><a href="#code">Code Example</a></li>
-			<li><a href="#projects">My Projects</a></li>
-			<li><a href="#education">Education</a></li>
-			<li><a href="#languages">Languages</a></li>
+			<li><a class="badge" href="#about-me">About Me</a></li>
+			<li><a class="badge" href="#contacts">Contacts</a></li>
+			<li><a class="badge" href="#skills">Skills</a></li>
+			<li><a class="badge" href="#code">Code Example</a></li>
+			<li><a class="badge" href="#projects">My Projects</a></li>
+			<li><a class="badge" href="#education">Education</a></li>
+			<li><a class="badge" href="#languages">Languages</a></li>
 		</ul>
 	</nav>
 	<main>
-		<section id="about-me">
+		<section id="about-me" class="bg-plant-1">
 			<h2>About Me</h2>
 			<p>
 				I am 23 years old. I am a junior front-end developer. I want to become a good developer to create cool
@@ -52,13 +52,41 @@
 			</p>
 		</section>
 		<div class="section-wrapper">
-			<section id="contacts">
+			<section id="contacts" class="bg-plant-2">
 				<h2>Contacts</h2>
 				<ul>
 					<li>Phone: <a href="tel:+998909420190">+998909420190</a></li>
 					<li>Email: <a href="mailto:vitaliatereschenko@gmail.com">vitaliatereschenko@gmail.com</a></li>
 					<li>GitHub: <a href="https://github.com/programissis" target="_blank"
 							rel="noopener noreferrer">@programissis</a></li>
+				</ul>
+			</section>
+			<section id="languages">
+				<h2>Languages</h2>
+				<ul>
+					<li>Belarusian - native</li>
+					<li>Russian - native</li>
+					<li>English - B1</li>
+				</ul>
+			</section>
+		</div>
+		<section id="code" class="bg-plant-3">
+			<h2>Code Example</h2>
+			<pre><code>const myHeading = document.querySelector('h1');
+
+function sum(num1, num2) {
+	const result = num1 + num2;
+	return result;
+}
+
+myHeading.textContent = sum(2, 2);</code></pre>
+		</section>
+		<div class="section-wrapper">
+			<section id="projects" class="bg-plant-1">
+				<h2>My Projects</h2>
+				<ul>
+					<li>RSSchool CV - <a href="https://github.com/programissis/rsschool-cv" target="_blank"
+							rel="noopener noreferrer">GitHub Repo</a></li>
 				</ul>
 			</section>
 			<section id="skills">
@@ -71,44 +99,23 @@
 				</ul>
 			</section>
 		</div>
-		<section id="code">
-			<h2>Code Example</h2>
-			<pre><code>const myHeading = document.querySelector('h1');
-
-function sum(num1, num2) {
-	const result = num1 + num2;
-	return result;
-}
-
-myHeading.textContent = sum(2, 2);</code></pre>
-		</section>
-		<section id="projects">
-			<h2>My Projects</h2>
+		<section id="education" class="bg-plant-2">
+			<h2>Education</h2>
 			<ul>
-				<li>RSSchool CV - <a href="https://github.com/programissis/rsschool-cv" target="_blank"
-						rel="noopener noreferrer">GitHub Repo</a></li>
+				<li>Minsk College of Business - 2015-2019</li>
+				<li>Belarusian State University named after Maksim Tank (free form of education) - 2019-2023</li>
+				<li>Rolling Scopes School - now</li>
 			</ul>
 		</section>
-		<div class="section-wrapper">
-			<section id="education">
-				<h2>Education</h2>
-				<ul>
-					<li>Minsk College of Business - 2015-2019</li>
-					<li>Belarusian State University named after Maksim Tank (free form of education) - 2019-2023</li>
-					<li>Rolling Scopes School - now</li>
-				</ul>
-			</section>
-			<section id="languages">
-				<h2>Languages</h2>
-				<ul>
-					<li>Belarusian - native</li>
-					<li>Russian - native</li>
-					<li>English - B1</li>
-				</ul>
-			</section>
-		</div>
 	</main>
-	<footer></footer>
+	<footer>
+		<a class="course-logo" href="https://rs.school/js/" target="_blank" rel="noopener noreferrer">
+			<img src="https://rs.school/images/rs_school_js.svg" alt="rs school js logo">
+		</a>
+		<a class="badge" href="https://github.com/programissis" target="_blank"
+			rel="noopener noreferrer">github.com/programissis</a>
+		<span>2023</span>
+	</footer>
 </body>
 
 </html>
