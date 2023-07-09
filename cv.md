@@ -2,7 +2,7 @@
 
 ## frontend-developer
 
-<img src="photo_2023-03-18_07-05-32.jpg"  height="240" alt="vitalia tereschenko">
+<img src="photo_2023-03-18_07-05-32.jpg" height="240" alt="vitalia tereschenko">
 
 ### Contacts
 
