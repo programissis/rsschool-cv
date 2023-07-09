@@ -1,0 +1,65 @@
+:root {
+	--body-bg-color: #fffbff;
+	--section-bg-color: 122 87 65;
+	--nav-bg-color: #e6e3cd;
+	--border-color: #7d7572;
+	--text-color: #1e1b1a;
+
+	--body-padding: 60px;
+	--section-padding: 40px;
+	--body-border-radius: 120px;
+	--section-border-radius: calc(var(--body-border-radius) - var(--body-padding))
+}
+
+html {
+	background-color: white;
+	font-family: 'Noto Sans', sans-serif;
+	color: var(--text-color);
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'Noto Serif Display', serif;
+}
+
+h1 {
+	font-size: 3.5rem;
+	line-height: 4rem;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	background-color: var(--body-bg-color);
+	max-width: 800px;
+	margin: 40px auto;
+	padding: var(--body-padding);
+	border: 1px solid var(--border-color);
+	border-radius: var(--body-border-radius);
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+section {
+	background-color: rgb(var(--section-bg-color) / 0.05);
+}
+
+.name {}
+
+.avatar-img {
+	height: 300px;
+	border-radius: var(--section-border-radius);
+}
+
+nav {
+	background-color: var(--nav-bg-color);
+	border-radius: var(--section-border-radius);
+	padding: var(--section-padding);
+}
