@@ -17,18 +17,97 @@
 	<header>
 		<div class="name">
 			<h1>Vitalia<br>Tereschenko</h1>
-			<span>frontend developer</span>
+			<span class="job-title">frontend developer</span>
 		</div>
 		<img class="avatar-img" src="photo_2023-03-18_07-05-32.jpg" alt="Vitalia Tereschenko">
 	</header>
 	<nav>
-		<ul>
-			<li><a href="">lol</a></li>
-			<li><a href="">lol</a></li>
-			<li><a href="">lol</a></li>
+		<ul class="navigation-list">
+			<li><a href="#about-me">About Me</a></li>
+			<li><a href="#contacts">Contacts</a></li>
+			<li><a href="#skills">Skills</a></li>
+			<li><a href="#code">Code Example</a></li>
+			<li><a href="#projects">My Projects</a></li>
+			<li><a href="#education">Education</a></li>
+			<li><a href="#languages">Languages</a></li>
 		</ul>
 	</nav>
-	<main></main>
+	<main>
+		<section id="about-me">
+			<h2>About Me</h2>
+			<p>
+				I am 23 years old. I am a junior front-end developer. I want to become a good developer to create cool
+				projects with my husband-developer and work together :) I got my diploma in Minsk College of Business
+				with
+				specialization in “Pre-school education” where we studied two courses in “Information technology”. In
+				these
+				classes we made web-applications with games for children and many other things. Also, because of my high
+				scores and exams, I got a free form of education at the Belarusian State University named after Maksim
+				Tank,
+				but my husband and I had to move to Uzbekistan. So my education in pedagogy ended and I realized that I
+				want
+				more in IT. My experience in pedagogy is 3 years (not counting free internships). My experience in IT -
+				0
+				years so far, but I hope to change that soon.
+			</p>
+		</section>
+		<div class="section-wrapper">
+			<section id="contacts">
+				<h2>Contacts</h2>
+				<ul>
+					<li>Phone: <a href="tel:+998909420190">+998909420190</a></li>
+					<li>Email: <a href="mailto:vitaliatereschenko@gmail.com">vitaliatereschenko@gmail.com</a></li>
+					<li>GitHub: <a href="https://github.com/programissis" target="_blank"
+							rel="noopener noreferrer">@programissis</a></li>
+				</ul>
+			</section>
+			<section id="skills">
+				<h2>Skills</h2>
+				<ul>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>JS</li>
+					<li>Git</li>
+				</ul>
+			</section>
+		</div>
+		<section id="code">
+			<h2>Code Example</h2>
+			<pre><code>const myHeading = document.querySelector('h1');
+
+function sum(num1, num2) {
+	const result = num1 + num2;
+	return result;
+}
+
+myHeading.textContent = sum(2, 2);</code></pre>
+		</section>
+		<section id="projects">
+			<h2>My Projects</h2>
+			<ul>
+				<li>RSSchool CV - <a href="https://github.com/programissis/rsschool-cv" target="_blank"
+						rel="noopener noreferrer">GitHub Repo</a></li>
+			</ul>
+		</section>
+		<div class="section-wrapper">
+			<section id="education">
+				<h2>Education</h2>
+				<ul>
+					<li>Minsk College of Business - 2015-2019</li>
+					<li>Belarusian State University named after Maksim Tank (free form of education) - 2019-2023</li>
+					<li>Rolling Scopes School - now</li>
+				</ul>
+			</section>
+			<section id="languages">
+				<h2>Languages</h2>
+				<ul>
+					<li>Belarusian - native</li>
+					<li>Russian - native</li>
+					<li>English - B1</li>
+				</ul>
+			</section>
+		</div>
+	</main>
 	<footer></footer>
 </body>
 
